@@ -39,8 +39,7 @@ const BookingCalendar = () => {
                     src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FHelsinki&showPrint=0&src=ZjViMTZkMjE0MDFkN2UwYzhjZTY4NTE5MTY2ZjY2YWYxYmNiYzk1YmFmYzFhMjVjODMxMzg2NWYwZDgwYjY4NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5"
                     className="w-full h-[600px] rounded-lg border border-earth-300"
                     title="LT35 Varauskalenteri"
-                    frameBorder="0"
-                    scrolling="no"
+                    style={{ border: 0 }}
                   />
                 </div>
               </div>
@@ -55,27 +54,6 @@ const BookingCalendar = () => {
                 </ol>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6 text-left">
-                <div className="bg-green-50 rounded-lg p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">✅ Kalenterin edut:</h4>
-                  <ul className="space-y-2 text-sm text-gray-600">
-                    <li>🗓️ Näet reaaliaikaiset varaukset</li>
-                    <li>📱 Toimii kaikilla laitteilla</li>
-                    <li>🔄 Päivittyy automaattisesti</li>
-                    <li>👀 Helppo tarkistaa saatavuus</li>
-                  </ul>
-                </div>
-
-                <div className="bg-yellow-50 rounded-lg p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">📋 Muista:</h4>
-                  <ul className="space-y-2 text-sm text-gray-600">
-                    <li>📞 Varaus varmistetaan aina puhelimitse</li>
-                    <li>💰 Maksu noudettaessa (käteinen/kortti)</li>
-                    <li>📍 Kantotie 10, Tampere</li>
-                    <li>⏰ Noutoaika sovitaan joustavasti</li>
-                  </ul>
-                </div>
-              </div>
 
               <div className="mt-6 p-4 bg-accent-100 rounded-lg text-center">
                 <p className="text-sm text-accent-800">
