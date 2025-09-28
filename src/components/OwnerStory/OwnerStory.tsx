@@ -7,7 +7,7 @@ const OwnerStory = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Miksi vuokraan LT35:ää?
+              Miksi Koppiauto?
             </h2>
 
             <div className="space-y-6 text-gray-700">

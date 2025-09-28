@@ -5,7 +5,7 @@ const Contact = () => {
   const phoneNumber = "0405382758"
 
   const whatsappMessage = encodeURIComponent(
-    "Moi! Tarvitsisin pakettiautoa, onko LT35 vapaana? 🚐"
+    "Moi! Tarvitsen tilaa - onko Koppiauto vapaana? 🚐"
   )
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
@@ -146,10 +146,10 @@ const Contact = () => {
         <div className="mt-12 text-center">
           <div className="bg-primary-600 text-white rounded-xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
-              Valmis vuokraamaan?
+              Kun tarvitset tilaa?
             </h3>
             <p className="text-primary-100 mb-6">
-              Ota yhteyttä tänään ja varaa luotettava Volkswagen LT35 seuraavaan projektiiisi!
+              Ota yhteyttä tänään ja varaa luotettava Koppiauto seuraavaan projektiiisi!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

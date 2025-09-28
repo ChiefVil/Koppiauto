@@ -2,13 +2,25 @@ import { MapPin, Euro } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-primary-50 to-white py-16">
+    <>
+      {/* Brand Header */}
+      <div className="bg-gradient-to-r from-primary-600 to-accent-600 text-white py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-lg font-semibold">
+              <span className="text-accent-100">Koppiauto</span> - <span className="text-primary-100">Kun tarvitset tilaa!</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section className="bg-gradient-to-br from-primary-50 to-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Volkswagen LT35
-              <span className="block text-primary-600">Pakettiauto Vuokraus</span>
+              <span className="text-primary-600">Koppiauto</span>
+              <span className="block text-gray-700">Volkswagen LT35</span>
             </h1>
 
             <p className="text-xl text-gray-600 mb-8">
@@ -71,6 +83,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 
