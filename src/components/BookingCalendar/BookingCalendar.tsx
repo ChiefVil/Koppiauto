@@ -25,42 +25,44 @@ const BookingCalendar = () => {
               <div className="text-center mb-6">
                 <Calendar className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Varaa aika suoraan kalenterista!
+                  Tarkista saatavuus kalenterista
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Voit varata LT35:n suoraan alla olevasta kalenterista. Valitse sopiva aika ja saat vahvistuksen!
+                  Näet alla olevasta kalenterista milloin LT35 on vapaana. Tyhjät päivät = auto on saatavilla!
                 </p>
               </div>
 
-              {/* Google Calendar Appointment Scheduler */}
+              {/* Google Calendar Embed */}
               <div className="bg-gray-50 rounded-xl p-4 mb-6">
-                <div className="aspect-video w-full">
+                <div className="w-full">
                   <iframe
-                    src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2mS7lU2do4x-KnWc-pOdl3vCt60KSyWsql2bGXtmU17NKjO7SvvHkmgFmov_4xiiim15DS7UWs?gv=true"
-                    className="w-full h-full rounded-lg border-0"
+                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FHelsinki&showPrint=0&src=ZjViMTZkMjE0MDFkN2UwYzhjZTY4NTE5MTY2ZjY2YWYxYmNiYzk1YmFmYzFhMjVjODMxMzg2NWYwZDgwYjY4NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5"
+                    className="w-full h-[600px] rounded-lg border border-gray-300"
                     title="LT35 Varauskalenteri"
+                    frameBorder="0"
+                    scrolling="no"
                   />
                 </div>
               </div>
 
               <div className="bg-blue-50 rounded-xl p-6 mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">🎯 Suora varaus:</h4>
+                <h4 className="font-semibold text-gray-900 mb-3">📅 Miten varaat:</h4>
                 <ol className="space-y-2 text-sm text-gray-700">
-                  <li><strong>1.</strong> Valitse sopiva aika kalenterista</li>
-                  <li><strong>2.</strong> Täytä yhteystietosi</li>
-                  <li><strong>3.</strong> Saat automaattisen vahvistuksen</li>
-                  <li><strong>4.</strong> Soitan vielä varmistamaan yksityiskohdat</li>
+                  <li><strong>1.</strong> Tarkista kalenterista vapaat päivät</li>
+                  <li><strong>2.</strong> Soita tai lähetä WhatsApp-viesti</li>
+                  <li><strong>3.</strong> Kerro haluamasi päivä ja aika</li>
+                  <li><strong>4.</strong> Saat vahvistuksen ja sovitaan yksityiskohdat</li>
                 </ol>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 text-left">
                 <div className="bg-green-50 rounded-lg p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">✅ Varauskalenterin edut:</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3">✅ Kalenterin edut:</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
-                    <li>⚡ Välitön varaus ilman puheluita</li>
-                    <li>📅 Näet vapaat ajat reaaliajassa</li>
-                    <li>📱 Toimii puhelimessa ja tietokoneessa</li>
-                    <li>📧 Automaattiset muistutukset</li>
+                    <li>🗓️ Näet reaaliaikaiset varaukset</li>
+                    <li>📱 Toimii kaikilla laitteilla</li>
+                    <li>🔄 Päivittyy automaattisesti</li>
+                    <li>👀 Helppo tarkistaa saatavuus</li>
                   </ul>
                 </div>
 
