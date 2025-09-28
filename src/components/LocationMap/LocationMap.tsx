@@ -40,8 +40,8 @@ const LocationMap = () => {
       }
 
       if (mapRef.current && window.L && !mapInstanceRef.current) {
-        // Kantotie 10, Tampere coordinates
-        const kantotieCoords: [number, number] = [61.5042, 23.8089]
+        // Kantotie 10, Käpylä, Tampere coordinates
+        const kantotieCoords: [number, number] = [61.5117791, 23.7842648]
 
         // Initialize map
         mapInstanceRef.current = window.L.map(mapRef.current).setView(kantotieCoords, 13)

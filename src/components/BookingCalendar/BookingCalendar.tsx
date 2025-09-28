@@ -120,18 +120,18 @@ const BookingCalendar = () => {
               <div className="text-center mb-6">
                 <Calendar className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Varaa suoraan Google Kalenterista
+                  Varaa aika suoraan kalenterista!
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Näet suoraan LT35:n vapaat ajat ja voit ehdottaa varausaikoja!
+                  Voit varata LT35:n suoraan alla olevasta kalenterista. Valitse sopiva aika ja saat vahvistuksen!
                 </p>
               </div>
 
-              {/* Google Calendar Embed */}
+              {/* Google Calendar Appointment Scheduler */}
               <div className="bg-gray-50 rounded-xl p-4 mb-6">
                 <div className="aspect-video w-full">
                   <iframe
-                    src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FHelsinki&src=YOUR_CALENDAR_ID%40gmail.com&color=%23039BE5&showTitle=0&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&mode=MONTH"
+                    src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2mS7lU2do4x-KnWc-pOdl3vCt60KSyWsql2bGXtmU17NKjO7SvvHkmgFmov_4xiiim15DS7UWs?gv=true"
                     className="w-full h-full rounded-lg border-0"
                     title="LT35 Varauskalenteri"
                   />
@@ -139,23 +139,23 @@ const BookingCalendar = () => {
               </div>
 
               <div className="bg-blue-50 rounded-xl p-6 mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">📅 Miten varaat:</h4>
+                <h4 className="font-semibold text-gray-900 mb-3">🎯 Suora varaus:</h4>
                 <ol className="space-y-2 text-sm text-gray-700">
-                  <li><strong>1.</strong> Tarkista kalenterista vapaat päivät (ei tapahtumia = vapaa)</li>
-                  <li><strong>2.</strong> Soita tai lähetä WhatsApp-viesti haluamastasi ajasta</li>
-                  <li><strong>3.</strong> Vahvistan saatavuuden ja lisään varauksen kalenteriin</li>
-                  <li><strong>4.</strong> Sovitaan nouto ja maksu</li>
+                  <li><strong>1.</strong> Valitse sopiva aika kalenterista</li>
+                  <li><strong>2.</strong> Täytä yhteystietosi</li>
+                  <li><strong>3.</strong> Saat automaattisen vahvistuksen</li>
+                  <li><strong>4.</strong> Soitan vielä varmistamaan yksityiskohdat</li>
                 </ol>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 text-left">
                 <div className="bg-green-50 rounded-lg p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">✅ Google Kalenterin edut:</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3">✅ Varauskalenterin edut:</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
-                    <li>🗓️ Näet reaaliaikaiset varaukset</li>
-                    <li>📱 Toimii kaikilla laitteilla</li>
-                    <li>🔄 Päivittyy automaattisesti</li>
-                    <li>👥 Helppo jakaa muille</li>
+                    <li>⚡ Välitön varaus ilman puheluita</li>
+                    <li>📅 Näet vapaat ajat reaaliajassa</li>
+                    <li>📱 Toimii puhelimessa ja tietokoneessa</li>
+                    <li>📧 Automaattiset muistutukset</li>
                   </ul>
                 </div>
 
