@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Calendar, Clock, Euro, Phone } from 'lucide-react'
+import { Calendar, Clock, Euro, Phone, ExternalLink } from 'lucide-react'
 
 const BookingCalendar = () => {
   const [selectedDate, setSelectedDate] = useState<string>('')
   const [rentalType, setRentalType] = useState<'daily' | 'weekend'>('daily')
+  const [useExternalBooking, setUseExternalBooking] = useState(false)
 
   // Sample booked dates (in real app, this would come from backend)
   const bookedDates = [
@@ -81,12 +82,94 @@ const BookingCalendar = () => {
             </h2>
           </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Valitse haluamasi päivä ja vuokraustyyppi. Lopullinen varaus tehdään puhelimitse.
+            Tsekkaa kalenterista vapaita päiviä ja soittele sitten! Hinnat on ihan kivoja
+            ja auton voi usein noutaa joustavasti eri aikoina.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
+        <div className="mb-8 flex justify-center">
+          <div className="bg-white rounded-xl p-2 shadow-lg">
+            <div className="flex">
+              <button
+                onClick={() => setUseExternalBooking(false)}
+                className={`px-6 py-3 rounded-lg font-medium transition-colors ${
+                  !useExternalBooking
+                    ? 'bg-primary-600 text-white'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Tarkista saatavuus
+              </button>
+              <button
+                onClick={() => setUseExternalBooking(true)}
+                className={`px-6 py-3 rounded-lg font-medium transition-colors ${
+                  useExternalBooking
+                    ? 'bg-primary-600 text-white'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Varaa suoraan
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {useExternalBooking ? (
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+              <div className="bg-blue-50 rounded-xl p-8 mb-6">
+                <Calendar className="h-16 w-16 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Varaa helposti Calendlyssa
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Voit varata LT35:n suoraan kalenterista! Valitse sopiva aika ja
+                  saat heti vahvistuksen varauksestasi.
+                </p>
+                <a
+                  href="https://calendly.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors"
+                >
+                  <ExternalLink className="h-5 w-5 mr-2" />
+                  Avaa varauskalenteri
+                </a>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div className="bg-green-50 rounded-lg p-6">
+                  <h4 className="font-semibold text-gray-900 mb-3">Varauskalenterin edut:</h4>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li>✅ Näet suoraan vapaat ajat</li>
+                    <li>✅ Instant-vahvistus varaukselle</li>
+                    <li>✅ Automaattiset muistutukset</li>
+                    <li>✅ Helppoa muuttaa varauksia</li>
+                  </ul>
+                </div>
+
+                <div className="bg-yellow-50 rounded-lg p-6">
+                  <h4 className="font-semibold text-gray-900 mb-3">Huom:</h4>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li>📞 Lopullinen varmistus puhelimitse</li>
+                    <li>💰 Maksu edelleen noudettaessa</li>
+                    <li>📍 Noutopaikan vahvistus</li>
+                    <li>⏰ Joustavat noutoajat</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+                <p className="text-sm text-gray-600">
+                  <strong>Vielä ei varauskalenteria?</strong> Ei hätää! Voit edelleen soittaa tai lähettää viestiä,
+                  niin sovitaan varaus perinteiseen tapaan.
+                </p>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <>
+          <div className="grid lg:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <button
@@ -207,26 +290,27 @@ const BookingCalendar = () => {
                 Varausohje
               </h3>
               <ol className="space-y-2 text-sm text-gray-600">
-                <li>1. Valitse haluamasi päivä kalenterista</li>
-                <li>2. Soita numeroon 040 538 2758</li>
-                <li>3. Varmista saatavuus ja sovita noudon yksityiskohdat</li>
-                <li>4. Maksu suoritetaan noudettaessa</li>
+                <li>1. Katso kalenterista milloin olisi kiva noutaa</li>
+                <li>2. Soita tai laita viestiä (040 538 2758)</li>
+                <li>3. Sovitaan yksityiskohdat ja noutoaika</li>
+                <li>4. Maksat noudettaessa - käteinen tai kortti</li>
               </ol>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Huomioi
+                Muista näitä!
               </h3>
               <ul className="space-y-1 text-sm text-gray-600">
-                <li>• Varaus varmistetaan puhelimitse</li>
-                <li>• Ajokortti mukaan noudettaessa</li>
-                <li>• Palautus tankattuna</li>
-                <li>• Peruutus vähintään 24h ennen</li>
+                <li>• Varaus varmistetaan aina puhelimella</li>
+                <li>• Ajokortti mukaan kun tulet noutamaan</li>
+                <li>• Palauta täyteen tankattu</li>
+                <li>• Jos perut, niin ilmoita hyvissä ajoin</li>
               </ul>
             </div>
           </div>
-        </div>
+          </>
+        )}
       </div>
     </section>
   )

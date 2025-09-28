@@ -12,8 +12,9 @@ const Hero = () => {
             </h1>
 
             <p className="text-xl text-gray-600 mb-8">
-              Tilava ja luotettava pakettiauto muuttoihin, kuljetuksiin ja muihin
-              tilavuutta vaativiin tarpeisiin. Juuri huollettu ja katsastettu.
+              Oma LT35 on ollut mukana lukemattomissa muutoissa ja projekteissa
+              vuosien varrella. Luotettava vanha tuttu, joka vie tavarat perille
+              turvallisesti. Huollettu säännöllisesti ja aina tankattuna valmiina!
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6 mb-8">
@@ -42,7 +43,7 @@ const Hero = () => {
                   <MapPin className="h-6 w-6 text-primary-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Käpylä</p>
+                  <p className="font-semibold text-gray-900">Kantotie 10</p>
                   <p className="text-sm text-gray-600">Tampere</p>
                 </div>
               </div>
@@ -73,8 +74,8 @@ const Hero = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary-600 text-white p-4 rounded-xl shadow-lg">
-              <p className="text-sm font-medium">B-kortilla ajettava</p>
-              <p className="text-xs opacity-90">5-vaihteinen manuaali</p>
+              <p className="text-sm font-medium">Helppo ajaa!</p>
+              <p className="text-xs opacity-90">B-kortti riittää</p>
             </div>
           </div>
         </div>

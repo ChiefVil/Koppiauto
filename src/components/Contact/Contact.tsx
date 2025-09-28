@@ -5,7 +5,7 @@ const Contact = () => {
   const phoneNumber = "0405382758"
 
   const whatsappMessage = encodeURIComponent(
-    "Hei! Olen kiinnostunut vuokraamaan Volkswagen LT35 pakettiauton. Voisitteko kertoa saatavuudesta?"
+    "Moi! Tarvitsisin pakettiautoa, onko LT35 vapaana? 🚐"
   )
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
@@ -18,8 +18,8 @@ const Contact = () => {
             Ota yhteyttä
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Varaa pakettiauto puhelimitse tai WhatsAppilla. Vastaamme nopeasti ja
-            autamme löytämään parhaan ratkaisun tarpeisiisi.
+            Soita tai lähetä viestiä niin katsotaan yhdessä miten voidaan auttaa!
+            Vastaan yleensä heti tai viimeistään muutaman tunnin sisällä.
           </p>
         </div>
 
@@ -80,8 +80,8 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-primary-600 mr-3 mt-0.5" />
                   <div>
                     <p className="font-semibold text-gray-900">Sijainti</p>
-                    <p className="text-gray-600">Käpylä, Tampere</p>
-                    <p className="text-gray-600 text-sm">Tarkka osoite sovitaan varauksen yhteydessä</p>
+                    <p className="text-gray-600">Kantotie 10, Tampere</p>
+                    <p className="text-gray-600 text-sm">Noutoaika sovitaan varauksen yhteydessä</p>
                   </div>
                 </div>
               </div>
@@ -99,44 +99,45 @@ const Contact = () => {
                   Mitä tarvitsen mukaan noudettaessa?
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Voimassa oleva B-ajokortti ja maksuväline. Käteinen tai kortti käy.
+                  Pelkästään ajokortti ja rahat mukaan! Käteinen tai kortti, molemmat käy hyvin.
+                  Tankki on aina täynnä kun noudat.
                 </p>
               </div>
 
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">
-                  Kuinka paljon ennen varaus pitää tehdä?
+                  Kuinka nopeasti saan auton?
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Suosittelemme varaamaan vähintään päivää ennen. Kiireellisissä
-                  tapauksissa soita, katsotaan saatavuus.
+                  Parhaassa tapauksessa saman tien, jos olen kotona! Yleensä pystyn
+                  järjestämään noudossa muutaman tunnin varoitusajalla.
                 </p>
               </div>
 
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">
-                  Voiko vuokra-aikaa pidentää?
+                  Voiko pitää pidempään kuin sovittiin?
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Kyllä, jos auto on vapaana. Ota yhteyttä hyvissä ajoin ennen
-                  alkuperäistä palautusaikaa.
+                  Totta kai, kunhan ilmoitat etukäteen! Jos ei ole seuraavaa varausta,
+                  niin ei ole kiirettä palauttaa.
                 </p>
               </div>
 
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">
-                  Entä jos auto vioittuu vuokra-aikana?
+                  Entä jos tulee joku ongelma?
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Ota välittömästi yhteyttä. Käymme läpi tilanteen ja
-                  sovimme jatkotoimenpiteistä.
+                  Soita vaan heti, niin keksitään ratkaisu yhdessä! Ei ole vielä tullut
+                  tilannetta vastaan, johon ei olisi löytynyt järkevää ratkaisua.
                 </p>
               </div>
             </div>
 
             <div className="mt-8 p-4 bg-primary-50 rounded-lg">
               <p className="text-sm text-primary-800 font-medium">
-                💡 Vinkki: WhatsAppilla saat yleensä nopeimmin vastauksen!
+                💡 Psst: WhatsAppia vilkuilen koko ajan, sieltä saat nopeimmin kiinni!
               </p>
             </div>
           </div>
@@ -153,17 +154,19 @@ const Contact = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`tel:${phoneNumber}`}
-                className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors"
+                className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors text-center min-h-[44px] flex items-center justify-center"
               >
-                Soita: {phoneNumber}
+                <span className="hidden sm:inline">Soita: {phoneNumber}</span>
+                <span className="sm:hidden">Soita</span>
               </a>
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors text-center min-h-[44px] flex items-center justify-center"
               >
-                Avaa WhatsApp
+                <span className="hidden sm:inline">Avaa WhatsApp</span>
+                <span className="sm:hidden">WhatsApp</span>
               </a>
             </div>
           </div>

@@ -40,11 +40,11 @@ const LocationMap = () => {
       }
 
       if (mapRef.current && window.L && !mapInstanceRef.current) {
-        // Käpylä, Tampere coordinates (approximate)
-        const kapylaCoords: [number, number] = [61.5021, 23.7984]
+        // Kantotie 10, Tampere coordinates
+        const kantotieCoords: [number, number] = [61.5042, 23.8089]
 
         // Initialize map
-        mapInstanceRef.current = window.L.map(mapRef.current).setView(kapylaCoords, 13)
+        mapInstanceRef.current = window.L.map(mapRef.current).setView(kantotieCoords, 13)
 
         // Add OpenStreetMap tiles
         window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -69,12 +69,12 @@ const LocationMap = () => {
         })
 
         // Add marker for pickup location
-        window.L.marker(kapylaCoords, { icon: vanIcon })
+        window.L.marker(kantotieCoords, { icon: vanIcon })
           .addTo(mapInstanceRef.current)
           .bindPopup(`
             <div class="p-2">
               <h3 class="font-semibold text-gray-900 mb-1">Noudon sijainti</h3>
-              <p class="text-gray-600 text-sm">Käpylä, Tampere</p>
+              <p class="text-gray-600 text-sm">Kantotie 10, Tampere</p>
               <p class="text-gray-600 text-sm">Volkswagen LT35 pakettiauto</p>
             </div>
           `)
@@ -105,8 +105,8 @@ const LocationMap = () => {
             </h2>
           </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Pakettiauto noudetaan joustavasti Tampereen Käpylän alueelta.
-            Tarkka osoite sovitaan varauksen yhteydessä.
+            Pakettiauto noudetaan osoitteesta Kantotie 10, Tampere.
+            Tarkka noutoaika sovitaan varauksen yhteydessä.
           </p>
         </div>
 
@@ -131,35 +131,35 @@ const LocationMap = () => {
                   <span className="bg-primary-100 text-primary-600 rounded-full w-6 h-6 flex items-center justify-center text-sm font-medium mr-3 mt-0.5">
                     1
                   </span>
-                  Ota yhteyttä vähintään päivää ennen
+                  Soittele etukäteen (mielellään päivää ennen)
                 </li>
                 <li className="flex items-start">
                   <span className="bg-primary-100 text-primary-600 rounded-full w-6 h-6 flex items-center justify-center text-sm font-medium mr-3 mt-0.5">
                     2
                   </span>
-                  Sovitaan tarkka noutoaika ja -paikka
+                  Sovitaan milloin tulet hakemaan autoa
                 </li>
                 <li className="flex items-start">
                   <span className="bg-primary-100 text-primary-600 rounded-full w-6 h-6 flex items-center justify-center text-sm font-medium mr-3 mt-0.5">
                     3
                   </span>
-                  Mukana ajokortti ja maksuväline
+                  Ota ajokortti ja rahat mukaan
                 </li>
                 <li className="flex items-start">
                   <span className="bg-primary-100 text-primary-600 rounded-full w-6 h-6 flex items-center justify-center text-sm font-medium mr-3 mt-0.5">
                     4
                   </span>
-                  Palautus tankattuna sovittuun paikkaan
+                  Palauta täysi tankki takaisin samaan paikkaan
                 </li>
               </ul>
             </div>
 
             <div className="bg-primary-50 border border-primary-200 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Alue: Käpylä, Tampere
+                Kantotie 10, Tampere
               </h3>
               <p className="text-gray-600 text-sm mb-4">
-                Nouto ja palautus joustavasti Tampereen kaupunkialueella
+                Nouto ja palautus joustavasti sovittuna aikana
               </p>
               <a
                 href="#contact"

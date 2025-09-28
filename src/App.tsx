@@ -1,6 +1,7 @@
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import VanDetails from './components/VanDetails/VanDetails'
+import OwnerStory from './components/OwnerStory/OwnerStory'
 import BookingCalendar from './components/BookingCalendar/BookingCalendar'
 import LocationMap from './components/LocationMap/LocationMap'
 import Contact from './components/Contact/Contact'
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Hero />
       <VanDetails />
+      <OwnerStory />
       <BookingCalendar />
       <LocationMap />
       <Contact />

@@ -13,19 +13,20 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <a
               href="tel:0405382758"
-              className="flex items-center space-x-2 text-primary-600 hover:text-primary-700 transition-colors"
+              className="flex items-center space-x-1 sm:space-x-2 text-primary-600 hover:text-primary-700 transition-colors"
             >
               <Phone className="h-5 w-5" />
-              <span className="font-medium">040 538 2758</span>
+              <span className="font-medium hidden sm:inline">040 538 2758</span>
+              <span className="font-medium sm:hidden">Soita</span>
             </a>
             <a
               href="#booking"
-              className="btn-primary"
+              className="btn-primary text-sm sm:text-base px-3 py-2 sm:px-6 sm:py-3"
             >
-              Varaa nyt
+              Varaa
             </a>
           </div>
         </div>
