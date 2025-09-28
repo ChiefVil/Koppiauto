@@ -1,4 +1,4 @@
-import { MapPin, Euro, Calendar } from 'lucide-react'
+import { MapPin, Euro } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -17,24 +17,14 @@ const Hero = () => {
               turvallisesti. Huollettu säännöllisesti ja aina tankattuna valmiina!
             </p>
 
-            <div className="grid sm:grid-cols-3 gap-6 mb-8">
+            <div className="grid sm:grid-cols-2 gap-6 mb-8">
               <div className="flex items-center space-x-3">
                 <div className="bg-primary-100 p-3 rounded-lg">
                   <Euro className="h-6 w-6 text-primary-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">60€/päivä</p>
-                  <p className="text-sm text-gray-600">sis. 150km</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3">
-                <div className="bg-primary-100 p-3 rounded-lg">
-                  <Calendar className="h-6 w-6 text-primary-600" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">150€/vkl</p>
-                  <p className="text-sm text-gray-600">sis. 450km</p>
+                  <p className="font-semibold text-gray-900">Hinnoittelu</p>
+                  <p className="text-sm text-gray-600">60€/päivä • 150€/vkl</p>
                 </div>
               </div>
 

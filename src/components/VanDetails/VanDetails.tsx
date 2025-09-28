@@ -1,4 +1,4 @@
-import { Ruler, Settings, DollarSign, MapPin } from 'lucide-react'
+import { Ruler, Settings, Euro, MapPin } from 'lucide-react'
 
 const VanDetails = () => {
   const specifications = [
@@ -107,7 +107,7 @@ const VanDetails = () => {
         <div>
           <div className="flex items-center justify-center mb-8">
             <div className="bg-primary-100 p-3 rounded-lg mr-4">
-              <DollarSign className="h-6 w-6 text-primary-600" />
+              <Euro className="h-6 w-6 text-primary-600" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900">Vuokrahinnat</h3>
           </div>
