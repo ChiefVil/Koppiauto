@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Calendar, Clock, Euro, Phone, ExternalLink } from 'lucide-react'
+import { Calendar, Clock, Euro, Phone } from 'lucide-react'
 
 const BookingCalendar = () => {
   const [selectedDate, setSelectedDate] = useState<string>('')
@@ -108,61 +108,72 @@ const BookingCalendar = () => {
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
-                Varaa suoraan
+                Google Kalenteri
               </button>
             </div>
           </div>
         </div>
 
         {useExternalBooking ? (
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-              <div className="bg-blue-50 rounded-xl p-8 mb-6">
-                <Calendar className="h-16 w-16 text-blue-600 mx-auto mb-4" />
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+              <div className="text-center mb-6">
+                <Calendar className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Varaa helposti Calendlyssa
+                  Varaa suoraan Google Kalenterista
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Voit varata LT35:n suoraan kalenterista! Valitse sopiva aika ja
-                  saat heti vahvistuksen varauksestasi.
+                  Näet suoraan LT35:n vapaat ajat ja voit ehdottaa varausaikoja!
                 </p>
-                <a
-                  href="https://calendly.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2" />
-                  Avaa varauskalenteri
-                </a>
+              </div>
+
+              {/* Google Calendar Embed */}
+              <div className="bg-gray-50 rounded-xl p-4 mb-6">
+                <div className="aspect-video w-full">
+                  <iframe
+                    src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FHelsinki&src=YOUR_CALENDAR_ID%40gmail.com&color=%23039BE5&showTitle=0&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&mode=MONTH"
+                    className="w-full h-full rounded-lg border-0"
+                    title="LT35 Varauskalenteri"
+                  />
+                </div>
+              </div>
+
+              <div className="bg-blue-50 rounded-xl p-6 mb-6">
+                <h4 className="font-semibold text-gray-900 mb-3">📅 Miten varaat:</h4>
+                <ol className="space-y-2 text-sm text-gray-700">
+                  <li><strong>1.</strong> Tarkista kalenterista vapaat päivät (ei tapahtumia = vapaa)</li>
+                  <li><strong>2.</strong> Soita tai lähetä WhatsApp-viesti haluamastasi ajasta</li>
+                  <li><strong>3.</strong> Vahvistan saatavuuden ja lisään varauksen kalenteriin</li>
+                  <li><strong>4.</strong> Sovitaan nouto ja maksu</li>
+                </ol>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 text-left">
                 <div className="bg-green-50 rounded-lg p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">Varauskalenterin edut:</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3">✅ Google Kalenterin edut:</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
-                    <li>✅ Näet suoraan vapaat ajat</li>
-                    <li>✅ Instant-vahvistus varaukselle</li>
-                    <li>✅ Automaattiset muistutukset</li>
-                    <li>✅ Helppoa muuttaa varauksia</li>
+                    <li>🗓️ Näet reaaliaikaiset varaukset</li>
+                    <li>📱 Toimii kaikilla laitteilla</li>
+                    <li>🔄 Päivittyy automaattisesti</li>
+                    <li>👥 Helppo jakaa muille</li>
                   </ul>
                 </div>
 
                 <div className="bg-yellow-50 rounded-lg p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">Huom:</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3">📋 Muista:</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
-                    <li>📞 Lopullinen varmistus puhelimitse</li>
-                    <li>💰 Maksu edelleen noudettaessa</li>
-                    <li>📍 Noutopaikan vahvistus</li>
-                    <li>⏰ Joustavat noutoajat</li>
+                    <li>📞 Varaus varmistetaan aina puhelimitse</li>
+                    <li>💰 Maksu noudettaessa (käteinen/kortti)</li>
+                    <li>📍 Kantotie 10, Tampere</li>
+                    <li>⏰ Noutoaika sovitaan joustavasti</li>
                   </ul>
                 </div>
               </div>
 
-              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                <p className="text-sm text-gray-600">
-                  <strong>Vielä ei varauskalenteria?</strong> Ei hätää! Voit edelleen soittaa tai lähettää viestiä,
-                  niin sovitaan varaus perinteiseen tapaan.
+              <div className="mt-6 p-4 bg-blue-100 rounded-lg text-center">
+                <p className="text-sm text-blue-800">
+                  <strong>💡 Vinkki:</strong> Jos et näe kalenteria, päivitä sivu tai kokeile eri selainta.
+                  Voit aina soittaa jos tulee ongelmia!
                 </p>
               </div>
             </div>
