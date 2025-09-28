@@ -23,7 +23,7 @@ const VanDetails = () => {
     {
       type: 'Viikonloppuvuokra',
       price: '150€',
-      duration: 'La-Su',
+      duration: 'pe 8 - su 21',
       includes: '450 km sisältyy',
     },
   ]

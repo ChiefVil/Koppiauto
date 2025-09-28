@@ -40,11 +40,11 @@ const LocationMap = () => {
       }
 
       if (mapRef.current && window.L && !mapInstanceRef.current) {
-        // Kantotie 10, Käpylä, Tampere coordinates
-        const kantotieCoords: [number, number] = [61.5117791, 23.7842648]
+        // Aaltotie 8, 33180 Tampere coordinates (parkkialue)
+        const aaltotieCoords: [number, number] = [61.509543, 23.778833]
 
         // Initialize map
-        mapInstanceRef.current = window.L.map(mapRef.current).setView(kantotieCoords, 13)
+        mapInstanceRef.current = window.L.map(mapRef.current).setView(aaltotieCoords, 13)
 
         // Add OpenStreetMap tiles
         window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -69,13 +69,13 @@ const LocationMap = () => {
         })
 
         // Add marker for pickup location
-        window.L.marker(kantotieCoords, { icon: vanIcon })
+        window.L.marker(aaltotieCoords, { icon: vanIcon })
           .addTo(mapInstanceRef.current)
           .bindPopup(`
             <div class="p-2">
               <h3 class="font-semibold text-gray-900 mb-1">Noudon sijainti</h3>
-              <p class="text-gray-600 text-sm">Kantotie 10, Tampere</p>
-              <p class="text-gray-600 text-sm">Volkswagen LT35 pakettiauto</p>
+              <p class="text-gray-600 text-sm">Aaltotie 8, 33180 Tampere</p>
+              <p class="text-gray-600 text-sm">Koppiauto - parkkialueella</p>
             </div>
           `)
           .openPopup()
@@ -105,7 +105,7 @@ const LocationMap = () => {
             </h2>
           </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Pakettiauto noudetaan osoitteesta Kantotie 10, Tampere.
+            Koppiauto noudetaan osoitteesta Aaltotie 8, 33180 Tampere (parkkialue).
             Tarkka noutoaika sovitaan varauksen yhteydessä.
           </p>
         </div>
@@ -156,10 +156,10 @@ const LocationMap = () => {
 
             <div className="bg-primary-50 border border-primary-200 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Kantotie 10, Tampere
+                Aaltotie 8, 33180 Tampere
               </h3>
               <p className="text-gray-600 text-sm mb-4">
-                Nouto ja palautus joustavasti sovittuna aikana
+                Parkkialueella - nouto ja palautus joustavasti sovittuna aikana
               </p>
               <a
                 href="#contact"

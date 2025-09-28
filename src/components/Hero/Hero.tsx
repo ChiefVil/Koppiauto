@@ -45,8 +45,8 @@ const Hero = () => {
                   <MapPin className="h-6 w-6 text-primary-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Kantotie 10</p>
-                  <p className="text-sm text-gray-600">Tampere</p>
+                  <p className="font-semibold text-gray-900">Aaltotie 8</p>
+                  <p className="text-sm text-gray-600">33180 Tampere</p>
                 </div>
               </div>
             </div>

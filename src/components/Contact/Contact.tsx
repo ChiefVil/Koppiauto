@@ -71,8 +71,8 @@ const Contact = () => {
                   <Clock className="h-6 w-6 text-primary-600 mr-3 mt-0.5" />
                   <div>
                     <p className="font-semibold text-gray-900">Aukioloajat</p>
-                    <p className="text-gray-600">Ma-Su: Sopimuksen mukaan</p>
-                    <p className="text-gray-600 text-sm">Joustavat nouto- ja palautusajat</p>
+                    <p className="text-gray-600">Ma-Su: Joustavasti sopimuksen mukaan</p>
+                    <p className="text-gray-600 text-sm">Nouto- ja palautusajat sovitaan tilanteen mukaan</p>
                   </div>
                 </div>
 
@@ -80,8 +80,8 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-primary-600 mr-3 mt-0.5" />
                   <div>
                     <p className="font-semibold text-gray-900">Sijainti</p>
-                    <p className="text-gray-600">Kantotie 10, Tampere</p>
-                    <p className="text-gray-600 text-sm">Noutoaika sovitaan varauksen yhteydessä</p>
+                    <p className="text-gray-600">Aaltotie 8, 33180 Tampere</p>
+                    <p className="text-gray-600 text-sm">Parkkialue - noutoaika sovitaan varauksen yhteydessä</p>
                   </div>
                 </div>
               </div>
