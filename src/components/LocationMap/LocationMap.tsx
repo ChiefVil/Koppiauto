@@ -93,7 +93,7 @@ const LocationMap = () => {
   }, [])
 
   return (
-    <section id="location" className="py-16 bg-gray-50">
+    <section id="location" className="py-16 bg-earth-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
@@ -163,7 +163,7 @@ const LocationMap = () => {
               </p>
               <a
                 href="#contact"
-                className="btn-primary w-full text-center block"
+                className="btn-accent w-full text-center block"
               >
                 Ota yhteyttä
               </a>

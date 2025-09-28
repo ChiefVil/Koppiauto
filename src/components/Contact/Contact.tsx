@@ -163,7 +163,7 @@ const Contact = () => {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors text-center min-h-[44px] flex items-center justify-center"
+                className="bg-success-600 hover:bg-success-700 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors text-center min-h-[44px] flex items-center justify-center shadow-sm hover:shadow-md"
               >
                 <span className="hidden sm:inline">Avaa WhatsApp</span>
                 <span className="sm:hidden">WhatsApp</span>

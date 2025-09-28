@@ -33,11 +33,11 @@ const BookingCalendar = () => {
               </div>
 
               {/* Google Calendar Embed */}
-              <div className="bg-gray-50 rounded-xl p-4 mb-6">
+              <div className="bg-earth-50 rounded-xl p-4 mb-6 border border-earth-200">
                 <div className="w-full">
                   <iframe
                     src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FHelsinki&showPrint=0&src=ZjViMTZkMjE0MDFkN2UwYzhjZTY4NTE5MTY2ZjY2YWYxYmNiYzk1YmFmYzFhMjVjODMxMzg2NWYwZDgwYjY4NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5"
-                    className="w-full h-[600px] rounded-lg border border-gray-300"
+                    className="w-full h-[600px] rounded-lg border border-earth-300"
                     title="LT35 Varauskalenteri"
                     frameBorder="0"
                     scrolling="no"
@@ -77,8 +77,8 @@ const BookingCalendar = () => {
                 </div>
               </div>
 
-              <div className="mt-6 p-4 bg-blue-100 rounded-lg text-center">
-                <p className="text-sm text-blue-800">
+              <div className="mt-6 p-4 bg-accent-100 rounded-lg text-center">
+                <p className="text-sm text-accent-800">
                   <strong>💡 Vinkki:</strong> Jos et näe kalenteria, päivitä sivu tai kokeile eri selainta.
                   Voit aina soittaa jos tulee ongelmia!
                 </p>

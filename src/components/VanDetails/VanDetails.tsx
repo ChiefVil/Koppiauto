@@ -43,7 +43,7 @@ const VanDetails = () => {
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {/* Tavaratilan mitat */}
-          <div className="bg-gray-50 rounded-xl p-6">
+          <div className="bg-earth-50 rounded-xl p-6 border border-earth-200">
             <div className="flex items-center mb-4">
               <div className="bg-primary-100 p-3 rounded-lg mr-4">
                 <Ruler className="h-6 w-6 text-primary-600" />
@@ -63,7 +63,7 @@ const VanDetails = () => {
           </div>
 
           {/* Tekniset tiedot */}
-          <div className="bg-gray-50 rounded-xl p-6">
+          <div className="bg-earth-50 rounded-xl p-6 border border-earth-200">
             <div className="flex items-center mb-4">
               <div className="bg-primary-100 p-3 rounded-lg mr-4">
                 <Settings className="h-6 w-6 text-primary-600" />
@@ -83,7 +83,7 @@ const VanDetails = () => {
           </div>
 
           {/* Nouto ja palautus */}
-          <div className="bg-gray-50 rounded-xl p-6">
+          <div className="bg-earth-50 rounded-xl p-6 border border-earth-200">
             <div className="flex items-center mb-4">
               <div className="bg-primary-100 p-3 rounded-lg mr-4">
                 <MapPin className="h-6 w-6 text-primary-600" />
@@ -139,7 +139,7 @@ const VanDetails = () => {
           </p>
           <a
             href="#booking"
-            className="btn-primary"
+            className="btn-accent"
           >
             Varaa pakettiauto
           </a>

@@ -24,7 +24,7 @@ const Header = () => {
             </a>
             <a
               href="#booking"
-              className="btn-primary text-sm sm:text-base px-3 py-2 sm:px-6 sm:py-3"
+              className="btn-accent text-sm sm:text-base px-3 py-2 sm:px-6 sm:py-3"
             >
               Varaa
             </a>

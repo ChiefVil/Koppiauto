@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#booking"
-                className="btn-primary text-center"
+                className="btn-accent text-center"
               >
                 Tarkista saatavuus
               </a>

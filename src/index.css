@@ -10,10 +10,14 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 text-center min-h-[44px] flex items-center justify-center;
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 text-center min-h-[44px] flex items-center justify-center shadow-sm hover:shadow-md;
   }
 
   .btn-secondary {
-    @apply bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors duration-200 text-center min-h-[44px] flex items-center justify-center;
+    @apply bg-earth-100 hover:bg-earth-200 text-earth-500 font-semibold py-3 px-6 rounded-lg transition-colors duration-200 text-center min-h-[44px] flex items-center justify-center border border-earth-300;
+  }
+
+  .btn-accent {
+    @apply bg-accent-600 hover:bg-accent-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 text-center min-h-[44px] flex items-center justify-center shadow-sm hover:shadow-md;
   }
 }

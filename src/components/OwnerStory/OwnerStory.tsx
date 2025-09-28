@@ -2,7 +2,7 @@ import { Heart, Wrench, Users } from 'lucide-react'
 
 const OwnerStory = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <section className="py-16 bg-gradient-to-br from-earth-50 to-earth-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -97,7 +97,7 @@ const OwnerStory = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-earth-50 rounded-xl p-6 border border-earth-200">
               <p className="text-gray-700 mb-4 italic">
                 "Matti oli todella joustava aikataulujen kanssa ja auto oli siistissä kunnossa.
                 Muutto sujui hyvin!"
@@ -113,7 +113,7 @@ const OwnerStory = () => {
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-earth-50 rounded-xl p-6 border border-earth-200">
               <p className="text-gray-700 mb-4 italic">
                 "Hyvä auto ja mukava kaveri! Sain noudettua IKEA-ostokset helposti ja hinta oli reilu."
               </p>
@@ -128,7 +128,7 @@ const OwnerStory = () => {
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-earth-50 rounded-xl p-6 border border-earth-200">
               <p className="text-gray-700 mb-4 italic">
                 "Nopea vastaus WhatsAppiin ja auto oli saatavilla lyhyellä varoitusajalla. Suosittelen!"
               </p>
