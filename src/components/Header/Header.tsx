@@ -15,11 +15,11 @@ const Header = () => {
 
           <div className="flex items-center space-x-2 sm:space-x-4">
             <a
-              href="tel:0405382758"
+              href="tel:0457867169"
               className="flex items-center space-x-1 sm:space-x-2 text-primary-600 hover:text-primary-700 transition-colors"
             >
               <Phone className="h-5 w-5" />
-              <span className="font-medium hidden sm:inline">040 538 2758</span>
+              <span className="font-medium hidden sm:inline">045 78767169</span>
               <span className="font-medium sm:hidden">Soita</span>
             </a>
             <a
