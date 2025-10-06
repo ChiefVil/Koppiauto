@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 ## Project Overview
 Van rental website for Volkswagen LT35 in Tampere, Finland. Recently rebranded to "Koppiauto" with slogan "Kun tarvitset tilaa". Built with React + TypeScript + Vite + Tailwind CSS.
 
@@ -38,8 +40,13 @@ src/
 - Finnish localization
 - Pricing: 60€/day, 150€/weekend
 
-## Notes
-- Deployed via GitHub Pages (auto-deploy on main branch push)
-- Google Calendar integration (see GOOGLE_CALENDAR_SETUP.md)
-- Recent rebranding from "Käpylä Vans" to "Koppiauto"
-- Uses color scheme optimized for accessibility and brand recognition
+## Deployment
+- GitHub Pages with base path `/kapyla-vans/` (configured in vite.config.ts)
+- Auto-deploys on push to main branch
+- Dev server runs on port 3000, accessible on all network interfaces (0.0.0.0)
+
+## Important Notes
+- **Google Calendar**: Integration setup documented in GOOGLE_CALENDAR_SETUP.md
+- **Branding**: Recently rebranded from "Käpylä Vans" to "Koppiauto" with slogan "Kun tarvitset tilaa"
+- **Color Scheme**: Optimized for accessibility and brand recognition
+- **Base Path**: When adding routes or asset paths, account for `/kapyla-vans/` base in production
