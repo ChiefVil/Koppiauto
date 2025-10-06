@@ -1,8 +1,8 @@
 import { Phone, MessageSquare, Clock, MapPin } from 'lucide-react'
 
 const Contact = () => {
-  const whatsappNumber = "358405382758" // Finnish format for WhatsApp
-  const phoneNumber = "0405382758"
+  const whatsappNumber = "358457867169" // Finnish format for WhatsApp
+  const phoneNumber = "045 78767169"
 
   const whatsappMessage = encodeURIComponent(
     "Moi! Tarvitsen tilaa - onko Koppiauto vapaana? 🚐"
